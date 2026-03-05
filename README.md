@@ -1,2 +1,2 @@
 # Full Stacks
-It Contains My MERN Stack Codes
+It Contains My Full Stack Codes
