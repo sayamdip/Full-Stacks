@@ -1,0 +1,41 @@
+p{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    
+}
+
+#header1{
+    color: brown;
+}
+
+.navigation{
+    margin: 2px;
+}
+
+p.introduction{
+    margin: 2px;
+}
+
+/*Descendant Selectors*/
+#blog h1{
+    color: purple;
+}
+
+/*Child Selectors*/
+#blog>h1{
+    color: blue;
+}
+
+/*:hover Pseudo-Class*/
+.navigation:hover{
+    color: orange;
+}
+
+h1{
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: solid;
+    text-decoration-thickness: 5px;
+}
