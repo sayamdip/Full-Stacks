@@ -43,3 +43,12 @@ var num = 10; // the value on the right is assigned to the variable name on the 
 console.log(5 > 4 > 3);
 /* The 5 > 4 is evaluated first (to 'true'), then true > 3 is evaluated to 'false', 
    because the 'true' value is coerced to '1' */
+
+
+console.log("\nCheck A Number Is Even Or Odd");
+let num1=8;
+let num2=5;
+let p=num1%2;
+let o=num2%2;
+console.log("Is: ",num1," is an even number?",p==0);
+console.log("Is: ",num2," is an odd number?",o!=0);
