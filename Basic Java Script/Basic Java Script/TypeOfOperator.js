@@ -1,3 +1,5 @@
+// typeof() Operator Returns A String (Like "number","boolean")
+
 var test1=typeof(4);
 var test2=typeof(3.14);
 var test3=typeof(true);
