@@ -3,6 +3,7 @@
 var PI=Math.PI;
 var Euler=Math.E;
 var Logarithm2=Math.LN2;
+var random=Math.random();
 
 // Rounding Methods
 var a=Math.ceil(5.4); // Rounds Up To The Closest Integer
@@ -27,6 +28,7 @@ var log10=Math.log10(100);
 console.log("PI= ",PI);
 console.log("Euler= ",Euler);
 console.log("Logarithm2= ",Logarithm2);
+console.log("Math.random()= ",random*10)
 
 console.log("Math.ceil(5.4)= ",a);
 console.log("Math.floor(5.4)= ",b);
