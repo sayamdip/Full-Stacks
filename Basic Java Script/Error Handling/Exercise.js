@@ -14,4 +14,4 @@ function addTwoNums(a,b){
     }
     
 }
-addTwoNums(5,"5");
+addTwoNums("5",5);
