@@ -22,3 +22,20 @@ console.log(gameName.length)
 console.log(gameName.toUpperCase())
 console.log(gameName.charAt(4))
 console.log(gameName.indexOf("t"))
+
+const newString = gameName.substring(0,5)
+console.log(newString)
+
+const anotherString = gameName.slice(-8,5)
+console.log(anotherString)
+
+const newStringOne = " Sayamdip "
+console.log(newStringOne)
+console.log(newStringOne.trim(" "))
+
+const url = "https://%sayamdip%40%deychaklader"
+console.log(url.replace("%40","-"))
+
+console.log(url.includes("sayamdip"))
+
+console.log(url.split("%"))
