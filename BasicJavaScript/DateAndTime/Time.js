@@ -7,4 +7,3 @@ console.log(newDate.toLocaleString())
 console.log(newDate.getTime())
 console.log(Math.floor(Date.now()/1000)) // To Seconds
 
-console.log()
