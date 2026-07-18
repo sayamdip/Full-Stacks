@@ -58,3 +58,17 @@ console.log(returnuser())
 const myArray = [2,5,3,7,8]
 
 // console.log(myArray.forEach(() => {}))
+
+const showObjects = () => {
+    const obj = {
+        name:"Sayamdip",
+        age: 22,
+        city: "Alipurduar Junction",
+        email: "sayamdip@gmail.com"
+    }
+    return obj
+    
+}
+console.log(showObjects())
+
+
