@@ -74,3 +74,8 @@ const myCoding = [
 myCoding.forEach((item) => {
     console.log(item.languageName)
 })
+
+const values = myCoding.forEach((items) => {
+    return items
+})
+console.log(values)
