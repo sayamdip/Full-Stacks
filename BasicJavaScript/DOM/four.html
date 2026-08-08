@@ -6,8 +6,8 @@
     <title>Chai Aur Code | DOM</title>
     <style>
         body{
-            background-color: brown;
-            color:white
+            background-color: rgb(0, 0, 0);
+            color:rgb(255, 255, 255)
         }
     </style>
     
@@ -20,26 +20,30 @@
 <script>
 
     // Un-optimised Code
+
     function addLanguage(langName){
         const li=document.createElement("li")
         li.innerHTML=`${langName}`
-        document.querySelector(".language").appendChild(li)
+        document.querySelector('.language').appendChild(li)
     }
     addLanguage("Python")
-    addLanguage("Typescript")
+    addLanguage("Java")
+    addLanguage("Golang")
 
     // optimised Code
-    function addoptiLanguage(langName){
-        const li =document.createElement("li")
-        li.appendChild(document.createTextNode(langName))
-        document.querySelector(".language").appendChild(li)
-    }
-    addoptiLanguage("Golang")
+
+    // function addoptiLanguage(langName){
+    //     const li =document.createElement("li")
+    //     li.appendChild(document.createTextNode(langName))  // This Is Quite Complicated
+    //     document.querySelector(".language").appendChild(li)
+    // }
+    // addoptiLanguage("Golang")
 
 
 
 
     //Edit
+
     const thirdLang=document.querySelector("li:nth-child(3)")
     console.log(thirdLang)
     const newli=document.createElement("li")
@@ -47,6 +51,7 @@
     thirdLang.replaceWith(newli)
 
     //Edit
+
     const firstLang=document.querySelector("li:first-child")
     console.log(firstLang)
     const newli4=document.createElement("li")
@@ -55,7 +60,8 @@
 
 
     //Remove
-    const lastLang=document.querySelector("li:last-child")
+    
+    const lastLang=document.querySelector('li:last-child')
     lastLang.remove()
 
 </script>

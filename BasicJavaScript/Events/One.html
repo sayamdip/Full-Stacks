@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        #google {
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Amazing Images</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="landscape"
+                    src="https://images.pexels.com/photos/4826377/pexels-photo-4826377.jpeg" alt="landscape"></li>
+            <li><img width="200px" id="photoshop"
+                    src="https://images.pexels.com/photos/7675029/pexels-photo-7675029.jpeg?auto=compress&w=1260&h=750&dpr=1"
+                    alt="photoshop"></li>
+            <li><img width="200px" id="japan"
+                    src="https://images.pexels.com/photos/32659118/pexels-photo-32659118/free-photo-of-osaka-castle-with-traditional-japanese-architecture.jpeg?auto=compress&w=600"
+                    alt="japan"></li>
+            <li><img width="200px" id="river"
+                    src="https://images.pexels.com/photos/14942582/pexels-photo-14942582.jpeg?auto=compress&w=1260&h=750&dpr=1"
+                    alt=""></li>
+            <li><img width="200px" id="owl" 
+                    src="https://images.pexels.com/photos/13681325/pexels-photo-13681325.jpeg?auto=compress&w=600"
+                    alt=""></li>
+            <li><a href="https://www.google.com/" id="google">Google</a></li>
+        </ul>
+    </div>
+
+</body>
+<script>
+    // document.getElementById('owl').onClick = function(){
+    //     alert('Owl Clicked')
+    // }
+
+    // document.getElementById('owl').addEventListener('click',()=>{
+    //     alert('Owl Clicked')
+    // },false)
+
+    // Event Object
+    // type, timestamp, defaultPrevented, target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById('images').addEventListener('click',(e)=>{
+    //     console.log("Clicked Inside The ul")
+    // },false)
+
+    // document.getElementById('owl').addEventListener('click',(e)=>{
+    //     console.log("Owl Clicked")
+    //     e.stopPropagation() // This Stops Event Bubbling
+    // },false)
+
+    // document.getElementById('google').addEventListener('click',(e)=>{
+    //     e.preventDefault()
+    //     e.stopPropagation()
+    //     console.log("google clicked")
+    // },false)
+
+    // Real World Example
+    document.querySelector('#images').addEventListener('click',(e)=>{
+        console.log(e.target.tagName);
+        if(e.target.tagName === "IMG"){
+            console.log(e.target.id)
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+
+        }
+        // remove.parentNode.removeChild(removeIt)
+    },false)
+
+</script>
+
+</html>

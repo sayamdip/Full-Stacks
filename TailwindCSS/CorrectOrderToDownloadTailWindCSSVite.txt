@@ -1,0 +1,29 @@
+# 1. Creates package.json
+npm init -y
+
+# 2. Installs deps + creates node_modules
+npm install -D tailwindcss@3 postcss autoprefixer vite
+
+# 3. Creates config files
+npx tailwindcss init -p
+
+# 4. Install Tailwind CSS IntelliSense Extension in VS Code
+
+# 5. In tailwind.config.js, change content: [] to:
+content: ["*"]
+
+# 6. In package.json, add inside "scripts":
+"start": "vite",
+"dev": "vite",
+"build": "vite build"
+
+# 7. Create main.css and add:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+# 8. In index.html, add inside <head>:
+<link rel="stylesheet" href="./main.css">
+
+# 9. Run the project
+npm start
