@@ -1,4 +1,4 @@
-// Creating Promises
+// A) Creating Promises
 const promiseOne = new Promise(function(resolve, reject){
     // Do An async task
     // 1) DB Calls
@@ -11,13 +11,13 @@ const promiseOne = new Promise(function(resolve, reject){
     },1000)
 })
 
-// Consuming Promise
+// B) Consuming Promise
 promiseOne.then(function(){
     console.log("Promise Consumed");
     
 })
 
-// Doing Both Creating And Consuming In One Place
+// C) Doing Both Creating And Consuming In One Place
 new Promise(function(resolve, reject){
     setTimeout(function(){
         // In real-world applications, real async tasks like fetch() or database queries take an unknown amount of time over the network. When learning or testing Promises, setTimeout is the standard way to create artificial delays so you can see how Promises handle async behavior and timing.
@@ -29,7 +29,7 @@ new Promise(function(resolve, reject){
     console.log("Async 2 Resolved")
 })
 
-// Returning Data From A Promise
+// D) Returning Data From A Promise
 const promiseThree = new Promise(function(resolve,reject){
     setTimeout(function(){
         resolve({username:"sayamdip", email:"sayamdip@gmail.com"})
@@ -52,7 +52,7 @@ const promiseFour = new Promise(function(resolve, reject){
     },1000)
 })
 
-// Chaining Promise
+// E) Chaining Promise
 const username = promiseFour.then((user)=> {
     console.log(user)
     return user.username
@@ -69,7 +69,7 @@ const username = promiseFour.then((user)=> {
 
 console.log(username);
 
-// async and await
+// F) async and await
 const promiseFive = new Promise((resolve,reject) => {
     setTimeout(function(){
         let error = true
@@ -93,7 +93,7 @@ async function consumePromiseFive(){
 
 consumePromiseFive()
 
-// Fetch API
+// G) Fetch API
 async function getAllUsers(){
 
     try{
@@ -109,8 +109,7 @@ async function getAllUsers(){
 getAllUsers()
 
 
-// Fetch With .then .catch
-
+// H) Fetch With .then .catch
 fetch("https://api.github.com/users/sayamdip")
 .then((response) => {
     return response.json()
