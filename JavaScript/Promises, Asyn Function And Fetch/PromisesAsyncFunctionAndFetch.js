@@ -3,7 +3,7 @@ const promiseOne = new Promise(function(resolve, reject){
     // Do An async task
     // 1) DB Calls
     // 2) Cryptography
-    // 3) Netword
+    // 3) Network
 
     setTimeout(function(){
         console.log('Asyn Task Is Complete')
