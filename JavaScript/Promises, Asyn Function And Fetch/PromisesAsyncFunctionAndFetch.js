@@ -114,10 +114,11 @@ fetch("https://api.github.com/users/sayamdip")
 .then((response) => {
     return response.json()
 })
+
+.then((data) => {
+    console.log(data)
+})
 .catch((error) => {
     console.log(error)
 
-})
-.then((data) => {
-    console.log(data)
 })
