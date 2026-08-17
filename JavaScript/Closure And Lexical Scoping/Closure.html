@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <button class="buttons" id="Orange">Orange</button>
+    <button class="buttons" id="Green">Green</button>
+</body>
+<script>
+    // function init() {
+    //     var name = "Mozilla"; // name is a local variable created by init
+    //     function displayName() {
+    //     // displayName() is the inner function, that forms a closure
+    //     console.log(name); // use variable declared in the parent function
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+    // Lexical Scoping
+        function outer(){
+        let username = "Sayamdip"
+        function inner(){
+            console.log("Inner", username)
+        }
+        inner()
+    }
+    outer()
+
+    // Closure
+    function makeFunc() {
+        const name = "Mozilla";
+        function displayName() {
+            console.log(name);
+        }
+        return displayName;
+    }
+    const myFunc = makeFunc();
+    myFunc();
+    
+</script>
+
+<script>
+    button=document.querySelectorAll(".buttons")
+    button.forEach((buttons)=>{
+        buttons.addEventListener("click",(e)=>{
+            if(e.target.id==="Orange"){
+                document.body.style.backgroundColor="Orange"
+            }
+            if(e.target.id==="Green"){
+                document.body.style.backgroundColor="Green"
+            }
+        })
+    })
+    
+
+</script>
+</html>
