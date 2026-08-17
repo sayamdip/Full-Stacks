@@ -19,16 +19,17 @@
 </body>
 <script>
 
-    // Un-optimised Code
+    // Un-optimised Code (Adding New Element)
 
     function addLanguage(langName){
         const li=document.createElement("li")
-        li.innerHTML=`${langName}`
+        li.textContent=`${langName}`
         document.querySelector('.language').appendChild(li)
     }
     addLanguage("Python")
     addLanguage("Java")
     addLanguage("Golang")
+    addLanguage("Rust")
 
     // optimised Code
 
