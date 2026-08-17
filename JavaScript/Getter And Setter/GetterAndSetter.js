@@ -4,17 +4,17 @@ class User{
         this.password = password
     }
 
-    get email(){
+    get email(){ // getter
         return this.new_email.toUpperCase()
     }
-    set email(value){
+    set email(value){ // setter
         this.new_email = value
     }
 
-    get password(){
+    get password(){ // getter
         return this.new_password.toUpperCase()
     }
-    set password(value){
+    set password(value){ // setter
         this.new_password = value
     }
 }
