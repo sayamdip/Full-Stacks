@@ -76,6 +76,5 @@ myCoding.forEach((item) => {
 })
 
 const values = myCoding.forEach((items) => {
-    return items
+    console.log(`${items.languageName} -> ${items.languageFileName}`)
 })
-console.log(values)
