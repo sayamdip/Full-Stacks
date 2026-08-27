@@ -1,12 +1,13 @@
-
-
-
-
+import Chai from "./Chai"
 function App() {
 
   return (
-    <h1>Chai Aur React With Vite | Sayamdip Dey Chaklader</h1>
+    <>
+    {/* Fragments */}
+    <Chai/>
+    <h1>Chai Aur React</h1>
+    </>
+
   )
 }
-
 export default App
