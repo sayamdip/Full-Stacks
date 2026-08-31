@@ -11,7 +11,7 @@ npx tailwindcss init -p
 
 # 5. In tailwind.config.js, change content: [] to:
 content: ["./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}","]
+    "./src/**/*.{js,ts,jsx,tsx}",]
 
 # 6. In package.json, add inside "scripts":
 "start": "vite",
@@ -24,7 +24,7 @@ content: ["./index.html",
 @tailwind utilities;
 
 # 8. In index.html, add inside <head>:
-<link rel="stylesheet" href="/src/index.css">
+<link rel="stylesheet" href="src/index.css">
 
 # 9. Run the project
 npm start
