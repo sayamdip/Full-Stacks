@@ -1,0 +1,25 @@
+Step 1: Created the .env File (Secret / Local Configuration)
+
+VITE_APPWRITE_URL="test environment"
+
+Purpose: Stores your actual, private configuration and secrets (API URLs, database keys, secrets) for your local development environment.
+
+
+Step 2: Created the .env.sample File (Reference Template)
+
+VITE_APPWRITE_URL=""
+
+Purpose:
+Serves as a blueprint or dummy template for other developers or yourself in the future.
+Keeps keys identical to .env, but leaves values blank (or provides dummy example values).
+This file is committed to Git/GitHub.
+
+Step 3: Accessed the Variable in Your Code
+.env
+.env.local
+*.local
+
+Step 4: Accessing in Code:
+
+console.log(import.meta.env.VITE_APPWRITE_URL);
+
