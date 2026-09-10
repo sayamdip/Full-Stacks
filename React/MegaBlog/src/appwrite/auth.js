@@ -10,7 +10,6 @@ export class AuthService{
             .setEndpoint(config.appwriteUrl)
             .setProject(config.appwriteProjectID);
             
-        
         this.account = new Account(this.client);
         
     }
@@ -21,11 +20,9 @@ export class AuthService{
             if(userAccount){
                 // Call Another Method
                 
-
             }
             else{
                 return userAccount
-                
             }
 
         }
@@ -67,4 +64,3 @@ export class AuthService{
 const authService = new AuthService();
 
 export default authService
-
